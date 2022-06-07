@@ -10,6 +10,7 @@ const IndexPage: NextPage = () => {
       <Head>
         <title>Steak | My Steak</title>
       </Head>
+
       <MySteak />
       <UnbondQueue />
     </>
