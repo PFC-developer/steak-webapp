@@ -10,7 +10,7 @@ const StatsPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Steak | Protocol Stats</title>
+        <title>sAngel | Protocol Stats</title>
       </Head>
       <About />
       <Overview />

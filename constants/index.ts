@@ -6,8 +6,8 @@ export const CONTRACTS = {
   },
   testnet: {
     multiquery: "terra1mgrye4409qt9yen33rrwnj06eau56kh96ajjr2fcxvcc4etawp9qhsgf8f",
-    steakHub: "terra1lm7d4zr97rzp3a22szdv6ucpeyckyl2l2wh6jc9qrga78eyrvamsjgs5q6",
-    steakToken: "terra1q02glqy2gcl9kavshhh9tzr3l7cjwjwk7mhatd9h9nc243gq73esdat6wj",
+    steakHub: "terra1z5clq6f5z8ys7ax6nxu5e2w29stnzyhg2ugs5tywlrkxru0d65rsa49f53",
+    steakToken: "terra133na784paj579l98ep6uv9htnfzx2j6clfzpkhgld02styy8wvgssq9648",
   },
 };
 

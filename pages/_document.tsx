@@ -15,7 +15,7 @@ class CustomDocument extends Document {
           <style>
             {`
               body {
-                background-color: #f5d9c0 !important;
+                background-color: #172853 !important;
               }
               @keyframes wiggle {
                 0%   { transform: rotate(0deg);  }

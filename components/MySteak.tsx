@@ -37,7 +37,7 @@ const MySteak: FC = () => {
   const steakValue = steakBalance && prices.steak ? steakBalance * prices.steak : undefined;
   return (
     <>
-      <Header text="My Steak">
+      <Header text="My sAngel" >
         <Link
             variant="submit"
             isExternal={true}
@@ -78,14 +78,14 @@ const MySteak: FC = () => {
           {"($" + (steakValue ? formatNumber(steakValue, 2) : "0.00") + ")"}
         </Text>
         <Text color="brand.lightBrown" mt="5">
-          STEAK balance in wallet
+          sAngel balance in wallet
         </Text>
         <Flex direction={["column", "row", null, null]} justify="center" mt="10">
           <NextLink href="/bond" passHref>
             <chakra.a {...bondOrUnbondStyle}>Stake LUNA</chakra.a>
           </NextLink>
           <NextLink href="/unbond" passHref>
-            <chakra.a {...bondOrUnbondStyle}>Unstake STEAK</chakra.a>
+            <chakra.a {...bondOrUnbondStyle}>Unstake sAngel</chakra.a>
           </NextLink>
         </Flex>
       </Box>

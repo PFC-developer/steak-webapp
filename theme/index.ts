@@ -24,12 +24,13 @@ export default extendTheme({
   },
   colors: {
     brand: {
-      darkerBrown: "#a08b77",
-      darkBrown: "#d2bba6",
-      lightBrown: "#f5d9c0",
-      lighterBrown: "#e4d5c8",
-      red: "#d9474b",
-      black: "#312b26",
+      darkerBrown: "#FFEDBD",
+      darkBrown: "#0F6988",
+      lightBrown: "#FFEDBD",
+      xlighterBrown: "#e4d5c8",
+      lighterBrown: "#0f1e88",
+      red: "#54a3da",
+      black: "#DD482D",
     },
   },
   textStyles: {

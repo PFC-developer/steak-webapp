@@ -75,8 +75,8 @@ const BondForm: FC = () => {
           />
         </Flex>
         <AssetInput
-          assetSymbol="STEAK"
-          assetLogo="/steak.png"
+          assetSymbol="sAngel"
+          assetLogo="/angel_logo_bak.png"
           price={prices.steak}
           balance={balances ? balances.usteak / 1e6 : 0}
           isEditable={false}

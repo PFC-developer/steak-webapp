@@ -15,7 +15,7 @@ import { useRouter } from "next/router";
 
 import BurgerIcon from "./BurgerIcon";
 import CloseIcon from "./CloseIcon";
-import SteakIcon from "./SteakIcon";
+import SAngelIcon from "./SAngelIcon";
 import NavbarLink from "./NavbarLink";
 import NavbarReturn from "./NavbarReturn";
 import WalletInfo from "./WalletInfo";
@@ -30,7 +30,7 @@ const NavbarLinks: FC<Props> = ({ isBack = false }) => {
   return (
     <HStack display={["none", null, "block", null]} flex="1" px="12" spacing="6">
       {isBack ? <NavbarReturn /> : null}
-      {isBack ? null : <NavbarLink text="My Steak" href="/" />}
+      {isBack ? null : <NavbarLink text="My sAngel" href="/" />}
       {isBack ? null : <NavbarLink text="Protocol Stats" href="/stats" />}
     </HStack>
   );
@@ -40,7 +40,7 @@ const SidebarLinks: FC<Props> = ({ isBack = false, onClick }) => {
   return (
     <VStack align="flex-start" mt="20">
       {isBack ? <NavbarReturn onClick={onClick} /> : null}
-      {isBack ? null : <NavbarLink onClick={onClick} text="My Steak" href="/" />}
+      {isBack ? null : <NavbarLink onClick={onClick} text="My sAngel" href="/" />}
       {isBack ? null : <NavbarLink onClick={onClick} text="Protocol Stats" href="/stats" />}
     </VStack>
   );
@@ -59,7 +59,7 @@ const Navbar: FC = () => {
   return (
     <Box w="100%" py="6">
       <Flex w="100%" justify="space-between" align="center">
-        <SteakIcon w={["3rem", "4rem"]} h={["3rem", "4rem"]} />
+        <SAngelIcon />
         <NavbarLinks isBack={isBack} />
         <HStack justify="flex-end">
           {wallet ? <WalletInfo /> : <WalletConnect />}
@@ -87,15 +87,15 @@ const Navbar: FC = () => {
         <DrawerContent>
           <Flex
             height="100%"
-            bg="brand.lighterBrown"
+            bg="brand.darkBrown"
             zIndex="100"
             px={["6", null, "12"]}
             py="8"
             direction="column"
           >
             <Flex justify="space-between" width="100%" align="center">
-              <Box flexShrink={0}>
-                <SteakIcon w={["3rem", "4rem"]} h={["3rem", "4rem"]} />
+              <Box flexShrink={0}>x
+                <SAngelIcon />
               </Box>
               <Button variant="simple" mr="-2" onClick={onClose}>
                 <CloseIcon color="white" width="1.5rem" height="1.5rem" />

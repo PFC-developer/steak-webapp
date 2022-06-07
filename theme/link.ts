@@ -3,7 +3,7 @@ const link = {
     submit: {
       transition: "0.2s all",
       outline: "none",
-      border: "solid 2px #d9474b",
+      border: "solid 2px #00ADBE",
       borderRadius: "md",
       color: "white",
       bg: "brand.red",

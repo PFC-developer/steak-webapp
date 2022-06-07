@@ -2,7 +2,7 @@ const styles = {
   baseStyle: {
     content: {
       border: "none",
-      bg: "brand.lighterBrown",
+      bg: "brand.darkBrown",
       width: "full",
       py: [5, 6],
       px: 6,

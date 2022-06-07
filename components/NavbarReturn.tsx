@@ -16,7 +16,7 @@ const NavbarReturn: FC<Props> = ({ onClick }) => {
         fill="brand.darkerBrown"
         _hover={{
           color: "brand.red",
-          fill: "brand.red",
+          fill: "brand.darkBrown",
         }}
         transition="0.2s all"
         whiteSpace="nowrap"

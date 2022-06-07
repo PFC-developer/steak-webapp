@@ -11,7 +11,7 @@ const Header: FC<Props> = ({ text, pb = 4, children }) => {
   return (
     <Box px="0" py="4" pb={pb}>
       <Flex>
-        <Text fontSize="2xl" fontWeight="800" opacity={0.4}>
+        <Text fontSize="2xl" fontWeight="800" opacity={0.8} color="brand.darkerBrown" >
           {text}
         </Text>
         <Spacer />

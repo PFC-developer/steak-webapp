@@ -87,14 +87,14 @@ const AssetInput: FC<Props> = ({
           >
             <NumberInputField
               h="16"
-              bg="brand.darkBrown"
+              bg="brand.lightBrown"
               fontSize="2xl"
               textAlign="right"
               p="4"
               pt="0"
               placeholder="0.0"
               _disabled={{
-                bg: "brand.lighterBrown",
+                bg: "brand.lightBrown",
                 opacity: "1.0",
                 cursor: "not-allowed",
               }}
