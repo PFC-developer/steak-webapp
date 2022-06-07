@@ -54,10 +54,10 @@ const UnbondForm: FC = () => {
 
   return (
     <Box maxW="container.sm" mx="auto">
-      <Header text="Unstake sAngel" />
+      <Header text="Unstake ANGELs" />
       <Box position="relative">
         <AssetInput
-          assetSymbol="sAngel"
+          assetSymbol="ANGELs"
           assetLogo="/angel_logo_bak.png"
           price={prices.steak}
           balance={balances ? balances.usteak / 1e6 : 0}

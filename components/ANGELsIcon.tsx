@@ -4,7 +4,7 @@ import { Image, Link} from "@chakra-ui/react";
  * Wiggle animation is defined in the style tag in `../pages/_document.tsx`
  * See: https://stackoverflow.com/questions/38132700/css-wiggle-shake-effect
  */
-export default function SAngelIcon() {
+export default function ANGELsIcon() {
   return (
     <Link
       isExternal={false}

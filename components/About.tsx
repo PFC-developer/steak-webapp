@@ -14,14 +14,14 @@ const About: FC = () => {
       <Header text="About" />
       <Box bg="white" p="6" mb="4" borderRadius="2xl">
         <Text mb="3">
-          <b>sAngel</b> is a liquid staking protocol for 🌎 Terra, designed for charitable donations.
+          <b>ANGELs</b> is a liquid staking protocol for 🌎 Terra, designed for charitable donations.
         </Text>
         <Text mb="3">
-          Users stake 🌔 LUNA through the <b>sAngel Hub</b> smart contract, which in return mints
-          sAngel tokens to the users representing their staked amount. Every 24–48 hours, the staking
+          Users stake 🌔 LUNA through the <b>ANGELs Hub</b> smart contract, which in return mints
+          ANGELs tokens to the users representing their staked amount. Every 24–48 hours, the staking
           rewards are claimed and forwarded to Angel wallets.
         </Text>
-       <Text>sAngel is designed to be charitable. ALL yield that is generated goes to Angel.</Text>
+       <Text>ANGELs is designed to be charitable. ALL yield that is generated goes to Angel.</Text>
         <hr />
         <Box mt="6" mb="1">
           <b>Useful links</b>
@@ -51,18 +51,18 @@ const About: FC = () => {
             isExternal={true}
             href="https://finder.terra.money/mainnet/address/xxx"
           >
-            sAngel Hub contract <ExternalLinkIconWrapper />
+            ANGELs Hub contract <ExternalLinkIconWrapper />
           </Link>
           <Link
             variant="docs"
             isExternal={true}
             href="https://finder.terra.money/mainnet/address/xxx"
           >
-            sAngel Token contract <ExternalLinkIconWrapper />
+            ANGELs Token contract <ExternalLinkIconWrapper />
           </Link>
         </Flex>
         <Flex direction={["column", null, "row", null]}>
-          sAngel-LUNA Pairs
+          ANGELs-LUNA Pairs
           (<Link
               variant="docs"
               isExternal={true}
