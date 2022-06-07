@@ -71,6 +71,7 @@ const MySteak: FC = () => {
         </Link>
       </Header>
       <Box color="white" bg="brand.red" p="12" mb="4" borderRadius="2xl" textAlign="center">
+        <Text fontSize="6xl" fontWeight="800">TESTNET only</Text>
         <Text fontSize="6xl" fontWeight="800">
           {steakBalance ? formatNumber(steakBalance, 3) : "0.000"}
         </Text>
