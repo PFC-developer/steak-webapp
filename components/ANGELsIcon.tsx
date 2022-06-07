@@ -11,7 +11,7 @@ export default function ANGELsIcon() {
       href="/"
       animation="wiggle 2.5s infinite"
     >
-     <Image src="/angel_logo.png" />
+     <Image src="/angel_logo.png" alt="ANGELs logo" />
     </Link>
   );
 }
