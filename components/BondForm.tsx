@@ -49,6 +49,7 @@ const BondForm: FC = () => {
     <Box maxW="container.sm" mx="auto">
       <Header text="Stake LUNA" />
       <Box position="relative">
+        <Text>Note: you can only STEAK your un-vested LUNA.</Text>
         <AssetInput
           assetSymbol="LUNA"
           assetLogo="/luna.png"
