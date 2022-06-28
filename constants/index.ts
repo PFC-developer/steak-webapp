@@ -33,5 +33,5 @@ export const NETWORKS = {
 export const GAS_OPTIONS = {
   gas: undefined, // leave undefined so it is estimated when signing
   gasPrices: "0.15uluna",
-  gasAdjustment: 1.2,
+  gasAdjustment: 1.3,
 };
