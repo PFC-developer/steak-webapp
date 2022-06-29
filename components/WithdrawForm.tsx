@@ -29,6 +29,7 @@ const WithdrawForm: FC = () => {
 
   let msgs: Msg[] = [];
   if (wallet && contracts) {
+    /*
     if (needToReconcile) {
       msgs.push(
         new MsgExecuteContract(wallet.terraAddress, contracts.steakHub, {
@@ -36,6 +37,8 @@ const WithdrawForm: FC = () => {
         })
       );
     }
+
+     */
     if (withdrawableAmount > 0) {
       console.log('wallet',wallet.terraAddress);
       console.log('contract',contracts.steakHub);
