@@ -44,6 +44,8 @@ const WithdrawForm: FC = () => {
           withdraw_unbonded: {},
         })
       );
+    } else {
+      console.log('withdrawable amount is zero?',withdrawableAmount);
     }
   } else {
     console.log('no wallet?',wallet);
