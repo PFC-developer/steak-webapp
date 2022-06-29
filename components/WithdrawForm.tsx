@@ -45,7 +45,7 @@ const WithdrawForm: FC = () => {
       console.log('contract',contracts.steakHub);
       msgs.push(
         new MsgExecuteContract(wallet.terraAddress, contracts.steakHub, {
-          withdraw_unbonded: {receiver: wallet.terraAddress},
+          withdraw_unbonded: {},
         })
       );
     } else {
