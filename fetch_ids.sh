@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-#terrad query staking validators -o json --limit 200 > /tmp/validators.json
+terrad query staking validators -o json --limit 200 > /tmp/validators.json
 #list=$(jq <  /tmp/validators.json -r '.validators[] | [.operator_address, .description.identity, .description.moniker] | @csv' | column -t -s"," )
-list=$(jq <  /tmp/validators.json -r '.validators[] | [.description.identity] | @csv' | column -t -s"," | tr -d \" ) 
+list=$(jq <  /tmp/validators.json -r '.validators[] | [.description.identity] | @csv' | column -t -s"," | tr -d \" )
 
 for id in $list
 do
