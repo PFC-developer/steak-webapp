@@ -41,21 +41,15 @@ const WithdrawForm: FC = () => {
 
 
     if (withdrawableAmount > 0) {
-      console.log('wallet',wallet.terraAddress);
-      console.log('contract',contracts.steakHub);
       msgs.push(
         new MsgExecuteContract(wallet.terraAddress, contracts.steakHub, {
           withdraw_unbonded: {},
         })
       );
     } else {
-      console.log('withdrawable amount is zero?',withdrawableAmount);
     }
   } else {
-    console.log('no wallet?',wallet);
-    console.log('no contract?',contracts);
   }
-  console.log('messages',msgs);
 
   return (
     <Box maxW="container.sm" mx="auto">
