@@ -23,10 +23,11 @@ const WithdrawForm: FC = () => {
   );
 
   // Need to reconcile if *any* of the *completed* batch is NOT reconciled
+ /*
   const needToReconcile = unbondRequests
     .map((ubr) => ubr.status === "completed" && ubr.batchIsReconciled === false)
     .includes(true);
-
+*/
   let msgs: Msg[] = [];
   if (wallet && contracts) {
     /*
