@@ -23,14 +23,14 @@ const WithdrawForm: FC = () => {
   );
 
   // Need to reconcile if *any* of the *completed* batch is NOT reconciled
- /*
+
   const needToReconcile = unbondRequests
     .map((ubr) => ubr.status === "completed" && ubr.batchIsReconciled === false)
     .includes(true);
-*/
+
   let msgs: Msg[] = [];
   if (wallet && contracts) {
-    /*
+
     if (needToReconcile) {
       msgs.push(
         new MsgExecuteContract(wallet.terraAddress, contracts.steakHub, {
@@ -39,13 +39,13 @@ const WithdrawForm: FC = () => {
       );
     }
 
-     */
+
     if (withdrawableAmount > 0) {
       console.log('wallet',wallet.terraAddress);
       console.log('contract',contracts.steakHub);
       msgs.push(
         new MsgExecuteContract(wallet.terraAddress, contracts.steakHub, {
-          withdraw_unbonded: {},
+          withdraw_unbonded: {receiver: wallet.terraAddress},
         })
       );
     } else {
