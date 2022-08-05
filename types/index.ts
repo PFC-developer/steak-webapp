@@ -154,7 +154,7 @@ export type ConfigResponse = {
  */
 export type StateResponse = {
   total_usteak: string;
-  total_uluna: string;
+  total_native: string;
   exchange_rate: string;
   unlocked_coins: Coin[];
 };

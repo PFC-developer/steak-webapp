@@ -199,7 +199,7 @@ export const useStore = create<State>((set) => ({
     ] = data.slice(0, 4);
 
     if (!lunaPriceResult || !lunaPriceResult.success) {
-      console.log("Error Luna price result",lunaPriceResult.data);
+     // console.log("Error Luna price result",lunaPriceResult.data);
       //throw new Error("Failed to query luna price");
     }
     if (!hubStateResult || !hubStateResult.success) {
@@ -220,7 +220,7 @@ export const useStore = create<State>((set) => ({
     set({
       priceLunaUsd: Number("0.00"),
       hubState: {
-        totalLunaLocked: Number(hubStateResponse["total_uluna"]) / 1e6,
+        totalLunaLocked: Number(hubStateResponse["total_native"]) / 1e6,
         exchangeRate: Number(hubStateResponse["exchange_rate"]),
       },
       pendingBatch: {
@@ -326,16 +326,17 @@ export const useStore = create<State>((set) => ({
       const axiosResponse2 = await axios.get<ContractStoreResponse<MultiqueryResponse>>(
         `${grpcGatewayUrl}/cosmwasm/wasm/v1/contract/${multiquery}/smart/${queries2}`
       );
-   //   console.log('axios2',`${grpcGatewayUrl}/cosmwasm/wasm/v1/contract/${multiquery}/smart/${queries2}`);
+    //  console.log('axios2',`${grpcGatewayUrl}/cosmwasm/wasm/v1/contract/${multiquery}/smart/${queries2}`);
    //   console.log('axios2r',axiosResponse2["data"]);
       // @ts-ignore
       const {data} = axiosResponse2["data"] ;
-     // console.log('batches',data)
+      //console.log('batches',data)
 
       for (const result of data) {
        // console.log('result',result);
         if (result.success) {
           const batch: Batch = decodeBase64(result.data);
+         // console.log('batch',batch);
           batchesById[batch.id] = batch;
         } else {
           throw new Error("Fail to query one of the previous batches");
