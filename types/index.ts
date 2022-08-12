@@ -169,13 +169,13 @@ export type PendingBatch = {
 };
 
 /**
- * Corresponding to Rust struct [`steak::hub::Batch`](https://github.com/st4k3h0us3/steak-contracts/blob/v1.0.0-rc0/packages/steak/src/hub.rs#L140-L150)
+ * Corresponding to Rust struct [`steak::hub::Batch`](https://github.com/PFC-developer/steak-contracts/blob/632623ec0c46f1d6e5c58003810a09c02677f18e/packages/steak/src/hub.rs#L167)
  */
 export type Batch = {
   id: number;
   reconciled: boolean;
   total_shares: string;
-  uluna_unclaimed: string;
+  amount_unclaimed: string;
   est_unbond_end_time: number;
 };
 

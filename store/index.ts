@@ -363,7 +363,7 @@ export const useStore = create<State>((set) => ({
         unbondRequestsParsed.push({
           status: currentTime < finishTime ? "unbonding" : "completed",
           amount:
-            (Number(batch["uluna_unclaimed"]) * Number(unbondRequest.shares)) /
+            (Number(batch["amount_unclaimed"]) * Number(unbondRequest.shares)) /
             Number(batch["total_shares"]),
           startTime: new Date((batch["est_unbond_end_time"] - config["unbond_period"]) * 1000),
           finishTime,
